@@ -61,13 +61,28 @@
 				background-color: yellow;
 				position: relative;
 			}
+			@media (max-width: 768px) {
+				#paper{
+					width: 60%;
+					height: 100%;
+					background-color: yellow;
+					position : relative;
+				}
+			}
 			#contents {
 				color: black;
 				list-style: none;
 			}
+			
 			#contents li {
 				font-family: "Bungee", sans-serif !important;
 				size: 25px;
+			}
+			@media (max-width: 768px){
+				#contents li{
+					font-family: "Bungee", sans-serif !important;
+					size: 15px;
+				}
 			}
 			#contents {
 				font-family: "Bungee", sans-serif !important;
@@ -79,7 +94,7 @@
 				position: absolute;
 			}
 			#pinImg2 {
-				right: 20px;
+				right: 5%;
 				width: 60px;
 				height: 60px;
 				z-index: 10;
@@ -111,7 +126,7 @@
 			<div
 				class="introduction bg-white d-flex justify-content-center align-items-center"
 			>
-				<div id="paper">
+				<div id="paper" class="shadow">
 					<img src="asset/pin.png" id="pinImg" alt="" />
 					<img src="asset/pin.png" id="pinImg2" alt="" />
 					<ul id="contents">
